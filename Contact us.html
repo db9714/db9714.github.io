@@ -7,7 +7,7 @@
         <link rel="icon" type="image/png" href="favicon.jpg">
 
         <!--Google Font link-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
 
         <link rel="stylesheet" href="assets/css/slick/slick.css"> 
@@ -23,20 +23,20 @@
 
 
         <!--<link rel="stylesheet" href="assets/css/xsslider.css">-->
-	
-	
+    
+    
 
-	<link rel="icon" type="image/png" href="assets/images/icons/favicon.ico"/>
-	<link rel="stylesheet" type="text/css" href="assets/js/vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/js/vendor/animate/animate.css">
-	<link rel="stylesheet" type="text/css" href="assets/js/vendor/css-hamburgers/hamburgers.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/js/vendor/animsition/css/animsition.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/js/vendor/select2/select2.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/js/vendor/daterangepicker/daterangepicker.css">
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" type="image/png" href="assets/images/icons/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="assets/js/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/vendor/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
 
@@ -82,8 +82,8 @@
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                             <i class="fa fa-bars"></i>
                         </button>
-                        <a class="navbar-header " href="index.html">
-                            <img src="assets/images/llogo.png" class="logo" alt="logo">
+                        <a class="navbar-header " href="#brand">
+                            <img src="assets/images/llogo.png" class="logo" alt="">
                             <!--<img src="assets/images/footer-logo.png" class="logo logo-scrolled" alt="">-->
                         </a>
 
@@ -97,7 +97,7 @@
                             <li><a href="About us.html">About</a></li>
                             <li><a href="Services.html">Service</a></li>
                             <li><a href="Portfolio.html">Portfolio</a></li>
-                            <li><a href="Contact us.html">Contact</a></li>
+                            <li><a href="contact us.html">Contact</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div> 
@@ -122,43 +122,57 @@
     
     
     
-	<div class="container-contact100 ">   
-		<button class="contact100-btn-show" >
-			<i class="fa fa-envelope-o" aria-hidden="true" ></i>
-		</button>
+    <div class="container-contact100">   
+        <button class="contact100-btn-show" >
+            <i class="fa fa-envelope-o" aria-hidden="true" ></i>
+        </button>
 
-		<div class="wrap-contact100">
-			<button class="contact100-btn-hide" style= "margin-top: 100px">
-				<i class="fa fa-close" aria-hidden="true" ></i>
-			</button>
-            <section class="section">
+        <div class="wrap-contact100">
+            <button class="contact100-btn-hide" style= "margin-top: 100px">
+                <i class="fa fa-close" aria-hidden="true" ></i>
+            </button>
 
-                    <div class="cards">
+            <form class="contact100-form validate-form" method="POST" action="https://formspree.io/deepsbhangale143@gmail.com" >
+                <span class="contact100-form-title">
+                    Contact Us
+                </span>
 
-                        <div class="cards-body">
+                <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+                    <span class="label-input100">Your Name</span>
+                    <input class="input100" type="text" name="name" placeholder="Enter your name">
+                    <span class="focus-input100"></span>
+                </div>
 
-                            <!--Google map-->
-                        <div id="map-container-google-12" class="z-depth-1-half map-container-7">
-                         <center> <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfiPrGhkfenGPuzthG6L4luI2lr00HHilf21c-SxZ0JxKvnMw/viewform?embedded=true" width="940" height="962" frameborder="0">Loading...</iframe></center>
-                        </div>
+                <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                    <span class="label-input100">Email</span>
+                    <input class="input100" type="text" name="email" placeholder="Enter your email addess">
+                    <span class="focus-input100"></span>
+                </div>
 
-                        </div>
+                <div class="wrap-input100 validate-input" data-validate = "Message is required">
+                    <span class="label-input100">Message</span>
+                    <textarea class="input100" name="message" placeholder="Your message here..."></textarea>
+                    <span class="focus-input100"></span>
+                </div>
 
-                    </div>
+                <div class="container-contact100-form-btn">
+                    <button class="contact100-form-btn">
+                        <span>
+                            Submit
+                            <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+            </form>
 
-            </section>
-			
-			<span class="contact100-more">
-				<h3>For any question contact us :</h3> <span class="contact100-more-highlight"><h3>+918830860814</h3></span>
-			</span>
+            <span class="contact100-more">
+                For any question contact us : <span class="contact100-more-highlight">8830860814</span>
+            </span>
+            
+            <a href="sale_report.pdf" download="akash" target="_blank">Download the report</a>
             
             
             
-            
-            
-            
-
-
             
             
             <!--Section: Contact v.2-->
@@ -171,69 +185,42 @@
 
                             <!--Google map-->
                         <div id="map-container-google-12" class="z-depth-1-half map-container-7" style="height: 200px">
-                          <center>  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7564.753830651716!2d73.94248359999999!3d18.557038499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3d8d5bcccc7%3A0x3daea3bdf6a677d7!2sTuscan+Estate+Signature+Meadows!5e0!3m2!1sen!2sin!4v1548409297543" frameborder="0"
-                            style="border:0" allowfullscreen></iframe></center>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7564.753830651716!2d73.94248359999999!3d18.557038499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3d8d5bcccc7%3A0x3daea3bdf6a677d7!2sTuscan+Estate+Signature+Meadows!5e0!3m2!1sen!2sin!4v1548409297543" frameborder="0"
+                            style="border:0" allowfullscreen></iframe>
                         </div>
 
                         </div>
 
                     </div>
 
-            </section> <!--Section: Contact v.2-->
-         
-        
+</section>
+<!--Section: Contact v.2-->
+            
+            
 
-		
+        
         
         </div>
 
-	</div>
+    </div>
 
-            
-            
-              
-                
-                <div class="main_footer fix bg-mega text-center p-top-40 p-bottom-30 m-top-50">
-                    <div class="col-md-12">
-                        <ul class="list-inline  m-top-20 wow fadeInRight data-wow-duration=15s">
-                                        <li>  <a href="https://en-gb.facebook.com/login/"><i class="fa fa-facebook" style="font-size: 25px "></i></a></li>
-                                        <li><a href="https://twitter.com/login"><i class="fa fa-twitter" style="font-size: 25px "></i></a></li>
-                                        <li><a href="https://www.linkedin.com/uas/login"><i class="fa fa-linkedin" style="font-size: 25px " ></i></a></li>
-                                        <li><a href="https://plus.google.com/discover"><i class="fa fa-google-plus" style="font-size: 25px "></i></a></li>
-                                           
-                                    </ul><br>
-                             <p class="wow fadeInRight" data-wow-duration="1s">
-                            Made with 
-                            <i class="fa fa-heart" style="color: red"></i>
-                            by 
-                            <a target="_blank" href="#">Developers</a> 
-                            2019. All Rights Reserved
-                        </p>
-                    </div><!-- End off col-md-12 -->
-                </div><!-- End off main_footer fix bg-mega text-center p-top-40 p-bottom-30 m-top-80 -->
-                </div><!-- End off container -->
-                
-            </footer>
-            
-            
-            
          </div>
 
-	<div id="dropDownSelect1"></div>
+    <div id="dropDownSelect1"></div>
 
 
          <!-- JS includes -->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script src="vendor/select2/select2.min.js"></script>
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
-	<script src="js/map-custom.js"></script>
-	<script src="js/main.js"></script>
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+    <script src="js/map-custom.js"></script>
+    <script src="js/main.js"></script>
         <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="assets/js/vendor/bootstrap.min.js"></script>
         <script src="assets/js/owl.carousel.min.js"></script>
