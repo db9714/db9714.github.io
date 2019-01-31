@@ -453,7 +453,7 @@ textarea.input100 {
   font-family: FontAwesome;
   display: block;
   position: absolute;
-  color: #c80000;
+  color: #000;
   font-size: 16px;
   top: 58%;
   -webkit-transform: translateY(-50%);
