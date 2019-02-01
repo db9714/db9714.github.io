@@ -43,9 +43,9 @@
                     <tr placeholder="Products" type="text" >
                       <h4> Products</h4>
                       <td><select name="Products" style="width: 70px">
-                        <option>Tee</option>
-                        <option>Ball valve</option>
-                        <option>abc</option>
+                        <option value="Tee">Tee</option>
+                        <option value="Ball value">Ball valve</option>
+                        <option value="abc">abc</option>
                       </select></td>
                      <span class="focus-input100"></span>
                   <div class="wrap-input100 validate-input" data-validate = quantity>
@@ -95,7 +95,7 @@ function myFunction() {
   var row = table.insertRow(0);
   var cell1 = row.insertCell(0);
   var cell2 = row.insertCell(1);
-  cell1.innerHTML = "<select style='width: 70px'><option>Tee</option><option>Ball valve</option><option>abc</option></select>";
+  cell1.innerHTML = "<select style='width: 70px'><option value='Tee'>Tee</option><option value='Ball valve'>Ball valve</option><option value='abc'>abc</option></select>";
   cell2.innerHTML = "<input class='input100' type='number' name='Quantity' placeholder='quantity' style='width: 70px'> ";
 }
 function myFunction1() {
