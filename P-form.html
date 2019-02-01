@@ -42,7 +42,11 @@
                 <table id="myTable">
                     <tr placeholder="Products" type="text" >
                       <h4> Products</h4>
-                      <td><select name="Products" style="width: 70px"><option>Tee</option><option>Ball valve</option><option>abc</option></select></td>
+                      <td><select name="Products" style="width: 70px">
+                        <option>Tee</option>
+                        <option>Ball valve</option>
+                        <option>abc</option>
+                      </select></td>
                      <span class="focus-input100"></span>
                   <div class="wrap-input100 validate-input" data-validate = quantity>
                     <td> <input class="input100" type="number" name="Quantity" placeholder="quantity" style="width: 70px"></td>
@@ -52,11 +56,11 @@
                  
               </div>
     </fieldset>
-              <!---      <fieldset><div>
+                    <fieldset><div>
                         <button onclick="myFunction()">Add Row</button>
                         <button onclick="myFunction1()">Delete Row</button>
                     </div></fieldset>
-               --> 
+               
     <fieldset>
       <div class="wrap-input100 validate-input" data-validate = "Please enter your message">
                   <textarea class="input100" name="Message" placeholder="Your Message"></textarea>
@@ -91,8 +95,8 @@ function myFunction() {
   var row = table.insertRow(0);
   var cell1 = row.insertCell(0);
   var cell2 = row.insertCell(1);
-  cell1.innerHTML = "<select style='width: 70px'><option>abc</option><option>abc</option><option>abc</option></select>";
-  cell2.innerHTML = "<input type='Number'style='width: 50px'> ";
+  cell1.innerHTML = "<select style='width: 70px'><option>Tee</option><option>Ball valve</option><option>abc</option></select>";
+  cell2.innerHTML = "<input class='input100' type='number' name='Quantity' placeholder='quantity' style='width: 70px'> ";
 }
 function myFunction1() {
   document.getElementById("myTable").deleteRow(0);
