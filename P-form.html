@@ -40,8 +40,9 @@
       <div class="wrap-input100 validate-input input100" >
           
                 <table id="myTable">
-                    <tr placeholder="Products" type="text" >
+                    <tr  >
                       <h4> Products</h4>
+                       <div class="wrap-input100 validate-input" data-validate = products>
                       <td><span class="focus-input100"></span></td>
                      
                   <div class="wrap-input100 validate-input" data-validate = quantity>
@@ -91,7 +92,7 @@ function myFunction() {
   var row = table.insertRow(0);
   var cell1 = row.insertCell(0);
   var cell2 = row.insertCell(1);
-  cell1.innerHTML = "<select style='width: 70px'><option value='Tee'>Tee</option><option value='Ball valve'>Ball valve</option><option value='abc'>abc</option></select>";
+  cell1.innerHTML = "<select style='width: 70px' name='Products' placeholder='Products'><option value='Tee'>Tee</option><option value='Ball valve'>Ball valve</option><option value='abc'>abc</option></select>";
   cell2.innerHTML = "<input class='input100' type='number' name='Quantity' placeholder='quantity' style='width: 70px'> ";
 }
 function myFunction1() {
