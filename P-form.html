@@ -9,7 +9,31 @@
         <link rel="stylesheet" href="assets/css/pform.css">
 
 <style type="text/css">
+.styled-select {
+   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+   height: 29px;
+   overflow: hidden;
+   width: 160px;
+}
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+}
 
+/* -------------------- Rounded Corners */
+.rounded {
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+}
+/* -------------------- Colors: Background */
+.yellow  { background-color:#00a885; }
+/* -------------------- Colors: Text */
+.yellow select  { color: #000; }
 </style>
        
     </head>
@@ -104,7 +128,7 @@ border-radius: 12px;">Delete product</button>
      
     </fieldset>
     <div class="container-contact100-form-btn">
-    <button class="contact100-form-btn " type="submit"  onclick="window.location.href='index.html'" id="contact-submit">
+    <button class="contact100-form-btn " type="submit"  onclick="window.location.href='Services.html'" id="contact-submit">
                         <span>
                            Back to Website
                             <i class="fa fa-long-arrow-left m-l-7" aria-hidden="true"></i>
@@ -127,8 +151,8 @@ function myFunction() {
   var row = table.insertRow(0);
   var cell1 = row.insertCell(0);
   var cell2 = row.insertCell(1);
-  cell1.innerHTML = "<select style='width: 70px' name='Products' placeholder='Products'><option value='Tee'>Tee</option><option value='Ball valve'>Ball valve</option><option value='abc'>abc</option></select>";
-  cell2.innerHTML = "<input class='input100' type='number' name='Quantity' placeholder='quantity' style='width: 70px'> ";
+  cell1.innerHTML = "<div class='styled-select yellow rounded'><select  name='Products' placeholder='Products'><option value='Tee'>Tee</option><option value='Ball valve'>Ball valve</option><option value='abc'>abc</option></select></div>";
+  cell2.innerHTML = "<input class='input100 styled-select yellow rounded ' type='number' name='Quantity' placeholder='Quantity'> ";
 }
 function myFunction1() {
   document.getElementById("myTable").deleteRow(0);
